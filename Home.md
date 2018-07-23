@@ -8,7 +8,7 @@ Uwazi is a web-based platform to analyze and publish large collections of docume
 
 # 
 
-###Machine-assisted extraction of metadata
+### Machine-assisted extraction of metadata
 
 With limited resources, human rights defenders connect information from different sources in order to tell 
 the story of victims, reveal patterns of discrimination, and hold governments accountable.  Machine learning can reduce the tedious manual work involved in this process by learning how a human rights defenders classify documents and which information is relevant for them.

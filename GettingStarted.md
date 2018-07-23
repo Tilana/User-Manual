@@ -1,4 +1,4 @@
-###Getting Started
+### Getting Started
 
 After uploading a collection of documents to Uwazi,  a metadata scheme with the relevant document properties such as the topic, related organizations and institutions, information about persons, and results or conclusions of discussions. Take a look at the [Uwazi user guide](https://github.com/huridocs/uwazi/wiki) for more information. 
 
@@ -63,7 +63,7 @@ Accepting, also, automatically adds the specific category to the document the su
 
 
 
-###Want more details?
+### Want more details?
 
 Find out about the Universal Sentence Encoder and the Convolutional Neural Network.
 
@@ -73,8 +73,3 @@ Daniel Cer, Yinfei Yang, Sheng-yi Kong, Nan Hua, Nicole Limtiaco, Rhomni St. Joh
 [Universal Sentence Encoder](https://arxiv.org/abs/1803.11175). arXiv:1803.11175, 2018.
 
 Yoon Kim. [Convolutional Neural Networks for Sentence Classification](https://arxiv.org/abs/1408.5882). arXiv:1408.5882, 2014.
-
-
-
-
-
