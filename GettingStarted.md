@@ -1,6 +1,29 @@
 ### Getting Started
 
-After uploading a collection of documents to Uwazi,  a metadata scheme with the relevant document properties such as the topic, related organizations and institutions, information about persons, and results or conclusions of discussions. Take a look at the [Uwazi user guide](https://github.com/huridocs/uwazi/wiki) for more information. 
+In summary, these are the steps for using machine learning for document classification:
+
+1. Upload you documents.
+2. Create and assign a basic template to the uploaded documents with at least a thesaurus property. The items in this thesaurus will be used as labels (or categories) for classification.
+3. Find and tag one sentence in one document that will be used a model for an initial sweep of the documents to locate more evidence sentences (sentence encoder step).
+4. Accept and reject some of these initial suggestions to have some ground for training the classifier.
+5. Train the classifier (convolutional neural network step).
+6. Run another sweep on the documents, this time it will be using the convolutional neural network instead of the sentence encoder).
+7. Repeat steps 4 to 6 until the resulting suggestions look coherent.
+8. Run the automatic classification on the whole database to have all the documents processed and tagged. (this step is not implemented yet).
+
+A note on the two classifiers being used:
+
+- The sentence encoder step is based in Google's Universal Sentence Encoder. This algorithm can compare two sentences to find out similarities in word semantics and gramatical structure. The advantage of this approach is that if the appropiate example sentence is provided, it can find very relevant suggestions even with only one example sentence.
+
+The drawback is that it can only compare two sentences, so it won't generalize the concept and remove edge cases. This is the default classifier, once we hit the "Train" button, the convolutional neural network classifier takes control and the sentence enconder classifier is never used again for this particular category.
+
+- The convoloutional neural network will use all the accepted and rejected sentences as training data. The adavange of this classifier is that it generalizes the classification concept, removing edge cases and emphasizing in reppeating patterns. This classifier is faster than the sentence encoder one.
+
+The drawback is inherent to all neural networks: training can go wrong and run into some of the well known problems of neural networks (overfitting, castrophic forgetting, etc). At this stage we don't have contingency measures implemented to fix these problems (apart from retraining with more data), but have some ideas to be implemented in our roadmap so users can easily overcome these issues.
+
+## Detailed instructions
+
+After uploading a collection of documents to Uwazi, create a metadata scheme with the relevant document properties such as the topic, related organizations and institutions, information about persons, and results or conclusions of discussions. Take a look at the [Uwazi user guide](https://github.com/huridocs/uwazi/wiki) for more information. 
 
 The next step is to show the algorithm what is important for you:
 
