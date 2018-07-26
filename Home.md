@@ -25,6 +25,6 @@ We strive to effectively support human rights defenders by building a system tha
 
 - *Interactiveness* - users are in power to accept but also reject suggestions, to keep the feedback loop open and continuously improve the algorithm
 
-  ​
 
+### [Getting Started](./GettingStarted.md)
 
