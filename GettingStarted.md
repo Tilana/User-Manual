@@ -4,8 +4,8 @@ In summary, these are the steps for using machine learning for document classifi
 
 1. Upload you documents.
 2. Create and assign a basic template to the uploaded documents with at least a thesaurus property. The items in this thesaurus will be used as labels (or categories) for classification.
-3. Find and tag one sentence in one document that will be used a model for an initial sweep of the documents to locate more evidence sentences (sentence encoder step).
-4. Accept and reject some of these initial suggestions to have some ground for training the classifier.
+3. Find and tag a sentence (or a just a few keywords) in one document that will be used a model for an initial sweep of the documents to locate more evidence sentences (sentence encoder step).
+4. Get initial suggestions and accept and reject some of these to have some ground for training the classifier.
 5. Train the classifier (convolutional neural network step).
 6. Run another sweep on the documents, this time it will be using the convolutional neural network instead of the sentence encoder).
 7. Repeat steps 4 to 6 until the resulting suggestions look coherent.
