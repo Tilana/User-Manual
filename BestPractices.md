@@ -13,7 +13,7 @@
 
 #### When to start accepting/rejecting suggestions?
 
-- wait until around 10 suggestions appeared before accepting or rejecting them
+- wait until around 10 suggestions appear before accepting or rejecting them. Stop the running algorithm, press *Retrain* to train the neural network and *Toggle predict* to get suggestions based on the provided sentences.
 
 
 
@@ -21,6 +21,6 @@
  - balance the number of positive and negative sample sentences
  - choose sample sentences that cover the different facets of a category,
   e.g. to classify documents about discrimination include sentences about racial, gender, religious, etc. discrimination
- - to improve the classifier, accept/reject about 10 suggested sentences, then *retrain* and afterwards *toogle predict* the category 
+ - to improve the classifier, accept/reject about 10 suggested sentences, then *Retrain* and afterwards *Toggle predict* the category 
 
 
